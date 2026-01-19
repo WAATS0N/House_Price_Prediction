@@ -22,7 +22,7 @@ def explore_data(file_path):
         print(df[col].value_counts().head(10))
 
 if __name__ == "__main__":
-    file_path = os.path.join("data", "House_Data.csv")
+    file_path = "data\House_Data.csv"
     if os.path.exists(file_path):
         explore_data(file_path)
     else:
